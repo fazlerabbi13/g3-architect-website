@@ -1,8 +1,128 @@
 /* work sens font from google font */
  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&family=Poppins:wght@400;500&family=Work+Sans:wght@400;500;600;700;800&display=swap');
-
+    /* sheared styles */
   *{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Work Sans', sans-serif;
   }
+
+  /* header style */
+  header{
+    padding: 50px 240px;
+    background: rgba(255, 144, 14, 0.10);
+  }
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.nav-heading{
+    color: #131313;
+    font-size:2.8rem;
+    font-weight: 700;
+} 
+nav li{
+    list-style: none;
+    margin-right: 30px;
+    color: #424242;
+    font-size: 1rem;
+    font-weight: 500;
+}
+nav > ul{
+    display: flex;
+}
+/* banner styles */
+.banner-content{
+    width: 862px;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-heading{
+    color: #131313;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.banner-description{
+    color:  #727272;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.btn-primary{
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 25px;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
+}
+.banner img{
+    width: 100%;
+    margin-top: 20px;
+}
+/* responsive media queris */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
+}
+/* tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }  
+}
+/* main styles */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* teams styles */
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.teams-content{
+    padding-right:70px ;
+    padding-left:70px ;
+}
+.team-heading{
+    font-size: 2.8rem;
+
+}
+.quick-list{
+    color: #727272;
+    font-size: 2.7rem;
+    font-weight: 500;
+}
+.of-our{
+    color:#131313;
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+.features{
+    color: #FF900E;
+    font-size:2.7rem;
+    font-weight: 700;
+}
+.teams-description{
+    color:  #727272;
+    font-size: 1rem;
+    font-weight: 400px;
+}
