@@ -34,7 +34,7 @@ nav > ul{
 }
 /* banner styles */
 .banner-content{
-    width: 862px;
+     max-width: 862px;
     text-align: center;
     margin: 0 auto;
 }
@@ -124,22 +124,80 @@ main{
 .teams-description{
     color:  #727272;
     font-size: 1rem;
-    font-weight: 400px;
+    font-weight: 400;
+}
+/* facts section */
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.facts-card-container .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px ;
+}
+.card-title{
+    color: #727272;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600px;
+    margin-top: 5px;
+}
+.facts-card-container .card-stats{
+        font-size: 2.8rem;
+        color:#424242;
+        margin-top: 10px;
+        margin-bottom: 10px;
+}
+/* sponsors styles */
+.sponsors{
+    text-align: center;
+}
+.sponsors-heading{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.sponsors-description{
+    color: #727272;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.sponsors-img-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    gap: 40px;
+}
+.sponsors-img-container img{
+    width:165px ;
 }
 /* responsive media queris */
 @media screen and (max-width: 576px) {
     header{
         padding: 20px;
     }
-    .teams-container{
+    .banner-heading{
+        font-size: 20px;
+    }
+    .teams-container,
+     .facts-card-container, 
+     .sponsors-img-container{
         flex-direction: column;
     }
     .teams-img-container{
         grid-template-columns: 1fr;
     }
-    .teams-content{
+    .teams-content,
+     .facts-card-container{
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .facts-card-container{
+        gap: 20px;
     }
     nav{
         flex-direction: column;
@@ -151,7 +209,8 @@ main{
     header{
         padding: 50px;
     }
-    nav, .teams-container{
+    nav, .teams-container,
+    .sponsors-img-container{
         flex-direction: column;
     } 
 } 
